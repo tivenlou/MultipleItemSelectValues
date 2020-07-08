@@ -1,0 +1,14 @@
+{
+  "name": "itemvaluesexame",
+  "version": "1.0.0",
+  "description": "* [多重選項值的檢測](https://docs.google.com/spreadsheets/d/1pCkF7-pwB8wrdPEr9Q-Gg3BsvHjmXHf7-RSl-S5Nr4Y/edit#gid=0)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "1.6.48"
+  }
+}
