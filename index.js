@@ -5,7 +5,7 @@ const bigInt = require("big-integer");
 
 // 1-1 create new values 產生新的總權值
 var totalValueBigInt = bigInt(0) // init 總權值的 bigInt Object
-var itemListArray = [1,2,3,4,5,6,7,8,9,10] // 1～10項都有權限的總權值 ＝ 2^10 - 1
+var itemListArray = [1,2,3,4,5,6,7,8,9,10] // 1～10項都有權限的總權值 ＝ 2^10 - 1 (511)
 
 // =====================
 // var itemListArray = fs.readFileSync('./10000.json')
@@ -20,7 +20,7 @@ for (var i in itemListArray) {
   totalValueBigInt = totalValueBigInt.add(itemValue)
 }
 
-// var totalValueBigInt = bigInt(2).pow(10000 - 1).subtract(1) // 10000value.text = 10000全部項次都有權限的最大值 = 2^N - 1
+var totalValueBigInt3000 = bigInt(2).pow(64 - 1).subtract(1) // 10000value.text = 10000全部項次都有權限的最大值 = 2^N - 1
 var totalItemCounts = 100 // 全部的可多重選擇的項次數量最大值 (數量可到千萬或更高到100000000)
 var maxValues = bigInt(2).pow(totalItemCounts - 1).subtract(1) // 全部項次都有權限的最大值 = 2^N - 1
 
